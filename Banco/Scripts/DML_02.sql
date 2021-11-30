@@ -10,7 +10,7 @@ VALUES ('Administardor'),
 		('Professor')
 
 INSERT INTO Temas(nomeTema)
-VALUES('Gestão'),('Mobile'),('FrontEnd')
+VALUES('Gestï¿½o'),('Mobile'),('FrontEnd')
 
 INSERT INTO Projeto(nomeProjeto,IdTema,IdUsuario)
 VALUES('Roman',2,1),('Opflix',3,2)

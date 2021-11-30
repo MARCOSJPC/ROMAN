@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>roman_mobile_api</name>
+    </assembly>
+    <members>
+        <member name="M:roman_mobile_api.Controllers.ProjetosController.Listar">
+            <summary>
+            Lista todos os projetos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:roman_mobile_api.Controllers.ProjetosController.Cadastrar(roman_mobile_api.Domains.Projeto)">
+            <summary>
+            Cadastra um novo projeto
+            </summary>
+            <param name="novoProjeto">objeto que será cadastrado</param>
+            <returns>um status code 201: no content</returns>
+        </member>
+        <member name="M:roman_mobile_api.Interfaces.IprojetoRepository.Listar">
+            <summary>
+            Lista todos os Projetos
+            </summary>
+            <returns>Uma lista de Projetos</returns>
+        </member>
+        <member name="M:roman_mobile_api.Interfaces.IprojetoRepository.Cadastrar(roman_mobile_api.Domains.Projeto)">
+            <summary>
+            Cadastra um novo Projeto
+            </summary>
+            <param name="novoProjeto">Objeto novoProjeto com os dados que serão cadastrados</param>
+        </member>
+        <member name="M:roman_mobile_api.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="email">E-mail do usuário</param>
+            <param name="senha">Senha do usuário</param>
+            <returns>Um objeto do tipo Usuario que foi buscado</returns>
+        </member>
+        <member name="P:roman_mobile_api.ViewModels.LoginViewModel.Email">
+            <summary>
+            Classe responsavel pelo modelo de login
+            </summary>
+        </member>
+    </members>
+</doc>
