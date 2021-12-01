@@ -1,4 +1,5 @@
-﻿using roman_mobile_api.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using roman_mobile_api.Contexts;
 using roman_mobile_api.Domains;
 using roman_mobile_api.Interfaces;
 using System;
@@ -20,7 +21,9 @@ namespace roman_mobile_api.Repositories
 
         public List<Projeto> Listar()
         {
-            return ctx.Projetos.ToList();
+            return ctx.Projetos.
+                Include(p => p.IdTemaNavigation).
+                ToList();
         }
     }
 }

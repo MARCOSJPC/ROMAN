@@ -13,7 +13,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import api from '../services/api';
 
-export default class Login extends Component {
+export default class Cadastrar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,7 +41,7 @@ export default class Login extends Component {
 
     //agora sim podemos descomentar.
     if (resposta.status == 200) {
-      this.props.navigation.navigate('./listar');
+      this.props.navigation.navigate('Listar');
     }
 
     console.warn(token);
